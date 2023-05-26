@@ -1,0 +1,94 @@
+/* BARRA LATERAL DE REDES */
+.sidebar {
+  position: fixed;
+  top: 50%; /* Ajusta la posición vertical de la barra */
+  left: 20px; /* Ajusta la posición horizontal de la barra */
+  transform: translateY(-50%); /* Centra verticalmente la barra */
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar li {
+  margin-bottom: 10px;
+}
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+.sidebarblanco a {
+  color: #ffffff;
+}
+.social-name {
+  display: none; /* Oculta el nombre completo inicialmente */
+}
+.sidebar a:hover .social-name {
+  display: inline; /* Muestra el nombre completo cuando se hace hover */
+  font-weight: normal; /* Restaura el peso de la fuente a normal */
+  margin-left: 5px; /* Agrega un margen a la izquierda del nombre */
+}
+.sidebar a:hover .fab.fa-whatsapp {
+  color: #25d366;
+}
+.sidebar a:hover .fas.fa-map-marker-alt {
+  color: #000000;
+}
+.sidebar a:hover .fab.fa-instagram {
+  color: #e4405f;
+}
+.sidebar a:hover .fab.fa-twitter {
+  color: #1da1f2;
+}
+.sidebar a:hover .fab.fa-facebook {
+  color: #1877f2;
+}
+.sidebar a:hover .fab.fa-youtube {
+  color: #ff0000;
+}
+
+/* BARRA SUPERIOR */
+
+.navbar {
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links li {
+  margin: 5px;
+}
+
+.navbar-links li a.blurred {
+  color: #555;
+  filter: blur(1.5px);
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+.textopresentacion {
+  padding: 50px;
+  color: rgb(56, 55, 55);
+}
